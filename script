@@ -115,3 +115,8 @@ case $aws_service in
         exit 1
         ;;
 esac
+
+
+#line 41: Aws_service is not converted to lower case .
+#aws_service=$(echo "$2" | tr '[:upper:]' '[:lower:]')
+#this should solve the issue
